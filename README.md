@@ -1,7 +1,8 @@
-# Node Debug Issue
-
+# VSCode Node Debug issue with Nuxt 3
 
 ## Setup
+
+Clone the repo and install the repo.
 
 Make sure to install the dependencies:
 
@@ -19,7 +20,7 @@ Start the development server with debugging enabled on `http://localhost:3000`:
 npm run debug
 ```
 
-## Attach Debugger
+## Attach Debugger (Config "Attach to local")
 
 There is a preconfigured launch configuration for VSCode in `.vscode/launch.json`. You can use this to attach the debugger to the running application.
 
@@ -27,7 +28,7 @@ You can set a breakpoint in `server/api/test.ts` and then open `http://localhost
 
 The debugger should stop at the breakpoint. But it does not. For some reasons the sourcemaps located unter `.nuxt/dev` are not loaded.
 
-## Start Nuxt Server with debugger from VSCode
+## Start Nuxt Server with debugger from VSCode (Config: server: nuxt)
 
 Instead of starting the application from the terminal, you can also start it from VSCode. There is a preconfigured launch configuration for VSCode in `.vscode/launch.json`. 
 You can use this to start the application with the debugger.
